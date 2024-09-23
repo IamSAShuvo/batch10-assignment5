@@ -37,9 +37,86 @@
     />
 
     <title>Donate Bangladesh</title>
+
+    <!-- * Tailwind default style config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              headerBg: "rgb(249, 247, 243)",
+              btnPrimaryColor: "rgb(180, 244, 97)",
+              btnHoverColor: "rgb(157, 240, 48)",
+              fontColorHeading: "rgb(17, 17, 17)",
+              fontColorPera: "rgba(17, 17, 17, 0.7)",
+              fontColorPera2: "rgba(17, 17, 17, 0.3)",
+              boxBorder: "rgba(17, 17, 17, 0.1)",
+            },
+            fontFamily: {
+              lexend: "Lexend",
+            },
+            backgroundImage: {
+              paper: "url(./assets/bg.jpg)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <i class="bi-alarm"></i>
-    <h1>Hello World!</h1>
+  <body class="font-lexend">
+    <!-- ? Header Section Start -->
+    <header class="bg-headerBg py-6">
+      <!-- ? Navbar Start -->
+      <nav class="w-10/12 mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <a
+              class="btn bg-btnPrimaryColor lg:px-8 hover:bg-btnHoverColor btn-ghost text-xl"
+              >Blog</a
+            >
+          </div>
+
+          <div class="navbar-center flex lg:gap-4 content-center">
+            <img src="./assets/logo.png" alt="donation" />
+            <h2 class="hidden lg:block">Donate Bangladesh</h2>
+          </div>
+
+          <div class="navbar-end gap-3">
+            <img src="./assets/coin.png" alt="coin" />
+            <p><span>5500</span> BDT</p>
+          </div>
+        </div>
+      </nav>
+      <!-- ? Navbar End -->
+    </header>
+    <!-- ? Header Section End -->
+
+    <!-- ? Main Section Start -->
+    <main class="w-10/12 mx-auto mt-20">
+      <section class="">
+        <!-- ? Toggle buttons | Donation & History -->
+        <div class="flex gap-4 justify-center">
+          <button
+            class="btn btn-success bg-btnPrimaryColor hover:bg-btnHoverColor lg:px-8 border-0"
+          >
+            Donation
+          </button>
+          <button
+            class="btn border border-fontColorPera2 hover:border-fontColorPera2"
+          >
+            History
+          </button>
+        </div>
+
+        <!-- ? Donation Cards -->
+        <!-- * Donation at Noakhali -->
+        <div>
+          <div>
+            <img src="./assets/noakhali.png" alt="A rescue team" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ? Main Section End -->
   </body>
 </html>
