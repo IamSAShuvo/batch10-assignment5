@@ -165,7 +165,7 @@ feniDonationButton.addEventListener("click", function () {
       document.getElementById("defaultAmount").innerText = defaultAmount;
 
       document
-        .getElementById("noakhaliDonationButton")
+        .getElementById("feniDonationButton")
         .setAttribute("onclick", "my_modal_2.showModal()");
 
       let timeAndDate = new Date();
@@ -212,7 +212,7 @@ quotaDonationButton.addEventListener("click", function () {
       document.getElementById("defaultAmount").innerText = defaultAmount;
 
       document
-        .getElementById("noakhaliDonationButton")
+        .getElementById("quotaDonationButton")
         .setAttribute("onclick", "my_modal_3.showModal()");
 
       let timeAndDate = new Date();
