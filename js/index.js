@@ -1,1 +1,5 @@
-console.log("I am from index.html");
+const blogBtn = document.getElementById("blogBtn");
+
+blogBtn.addEventListener("click", function () {
+  window.location.href = "/blog.html";
+});
