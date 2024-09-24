@@ -62,58 +62,60 @@
   </head>
   <body class="font-lexend">
     <!-- ? Header Section Start -->
-    <header class="bg-headerBg py-6 sticky top-0 z-50 backdrop-blur-lg">
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-white/70 hidden">
       <!-- ? Navbar Start -->
-      <nav class="w-11/12 mx-auto">
-        <div class="navbar justify-between">
-          <div id="blogBtn">
-            <a
-              class="btn bg-btnPrimaryColor lg:px-8 hover:bg-btnHoverColor btn-ghost text-xl text-fontColorHeading font-semibold"
-              >Blog</a
-            >
-          </div>
+      <div class="py-6 bg-headerBg">
+        <nav class="w-11/12 mx-auto">
+          <div class="navbar justify-between">
+            <div id="blogBtn">
+              <a
+                class="btn bg-btnPrimaryColor lg:px-8 hover:bg-btnHoverColor btn-ghost text-xl text-fontColorHeading font-semibold"
+                >Blog</a
+              >
+            </div>
 
-          <div class="navbar-center flex lg:gap-4 content-center">
-            <img src="./assets/logo.png" alt="donation" />
-            <h2
-              class="hidden lg:block text-fontColorHeading text-xl font-semibold"
-            >
-              Donate Bangladesh
-            </h2>
-          </div>
+            <div class="navbar-center flex lg:gap-4 content-center">
+              <img src="./assets/logo.png" alt="donation" />
+              <h2
+                class="hidden lg:block text-fontColorHeading text-xl font-semibold"
+              >
+                Donate Bangladesh
+              </h2>
+            </div>
 
-          <div class="gap-3">
-            <img src="./assets/coin.png" alt="coin" />
-            <p class="text-fontColorPera text-xl font-medium">
-              <span>5500</span> BDT
-            </p>
+            <div class="gap-3">
+              <img src="./assets/coin.png" alt="coin" />
+              <p class="text-fontColorPera text-xl font-medium">
+                <span>5500</span> BDT
+              </p>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <!-- ? Navbar End -->
-    </header>
-    <!-- ? Header Section End -->
 
-    <!-- ? Main Section Start -->
-    <main class="mt-14 lg:mt-20 flex flex-col gap-8 mb-20">
       <!-- ? Toggle buttons | Donation & History -->
-      <div
-        class="flex gap-4 justify-center sticky top-48 backdrop-blur-lg bg-white/70 z-40 w-full"
-      >
+      <div class="flex gap-4 justify-center pt-28">
         <button
+          id="donationBtn"
           class="btn btn-success bg-btnPrimaryColor hover:bg-btnHoverColor lg:px-8 border-0 font-semibold text-xl text-fontColorHeading"
         >
           Donation
         </button>
         <button
+          id="historyBtn"
           class="btn border border-fontColorPera2 hover:border-fontColorPera2 hover:border-0 text-fontColorPera font-medium text-xl"
         >
           History
         </button>
       </div>
+    </header>
+    <!-- ? Header Section End -->
 
+    <!-- ? Main Section Start -->
+    <main class="mt-14 lg:mt-20 flex flex-col gap-8 mb-20">
       <!-- ? Donation Cards -->
-      <section class="w-11/12 mx-auto">
+      <section id="donatingSection" class="w-11/12 mx-auto">
         <!-- * Donation at Noakhali -->
         <div
           class="flex flex-col lg:flex-row border border-boxBorder p-6 rounded-2xl gap-6"
@@ -137,7 +139,7 @@
             >
               <img src="./assets/coin.png" alt="coin" />
               <p class="text-fontColorPera text-base font-normal">
-                <span>00</span> BDT
+                <span id="noakhaliTotalFund">00</span> BDT
               </p>
             </div>
 
@@ -159,11 +161,13 @@
             <!-- Donation input fields -->
             <div class="space-y-6">
               <input
+                id="noakhaliFundInput"
                 type="text"
                 placeholder="Write Donation Amount"
-                class="input input-bordered w-full text-fontColorPera2 focus:outline-none text-sm"
+                class="input input-bordered w-full text-fontColorPera2 text-sm"
               />
               <button
+                id="noakhaliDonationButton"
                 class="btn btn-block bg-btnPrimaryColor hover:bg-btnHoverColor"
               >
                 Donate Now
@@ -217,7 +221,7 @@
               <input
                 type="text"
                 placeholder="Write Donation Amount"
-                class="input input-bordered w-full text-fontColorPera2 focus:outline-none text-sm"
+                class="input input-bordered w-full text-fontColorPera2 text-sm"
               />
               <button
                 class="btn btn-block bg-btnPrimaryColor hover:bg-btnHoverColor"
@@ -278,7 +282,7 @@
               <input
                 type="text"
                 placeholder="Write Donation Amount"
-                class="input input-bordered w-full text-fontColorPera2 focus:outline-none text-sm"
+                class="input input-bordered w-full text-fontColorPera2 text-sm"
               />
               <button
                 class="btn btn-block bg-btnPrimaryColor hover:bg-btnHoverColor"
@@ -286,6 +290,21 @@
                 Donate Now
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ? History Cards -->
+      <section id="historySection" class="w-11/12 mx-auto hidden">
+        <div
+          class="flex flex-col lg:flex-row border border-boxBorder p-6 rounded-2xl gap-6"
+        >
+          <!-- Description & Donation Part -->
+          <div
+            class="flex flex-col gap-6 lg:justify-between lg:items-stretch lg:w-2/4"
+          >
+            <h1>6500 Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+            <p></p>
           </div>
         </div>
       </section>
@@ -299,5 +318,6 @@
 
     <!-- ? Script | JavaScript -->
     <script src="./js/index.js"></script>
+    <script src="./js/commonFunction.js"></script>
   </body>
 </html>

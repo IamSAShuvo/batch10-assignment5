@@ -62,35 +62,36 @@
   </head>
   <body class="font-lexend">
     <!-- ? Header Section Start -->
-    <header class="bg-headerBg py-6">
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-white/70">
       <!-- ? Navbar Start -->
-      <nav class="w-11/12 mx-auto">
-        <div class="navbar justify-between">
-          <div class="">
-            <a
-              href="/batch10-assignment5/index.html"
-              class="btn bg-btnPrimaryColor lg:px-8 hover:bg-btnHoverColor btn-ghost text-xl text-fontColorHeading font-semibold"
-              >⬅ Home</a
-            >
-          </div>
+      <div class="py-6 bg-headerBg">
+        <nav class="w-11/12 mx-auto">
+          <div class="navbar justify-between">
+            <div id="homeBtn">
+              <a
+                class="btn bg-btnPrimaryColor lg:px-8 hover:bg-btnHoverColor btn-ghost text-xl text-fontColorHeading font-semibold"
+                >⬅ Home</a
+              >
+            </div>
 
-          <div class="navbar-center flex lg:gap-4 content-center">
-            <img src="./assets/logo.png" alt="donation" />
-            <h2
-              class="hidden lg:block text-fontColorHeading text-xl font-semibold"
-            >
-              Donate Bangladesh
-            </h2>
-          </div>
+            <div class="navbar-center flex lg:gap-4 content-center">
+              <img src="./assets/logo.png" alt="donation" />
+              <h2
+                class="hidden lg:block text-fontColorHeading text-xl font-semibold"
+              >
+                Donate Bangladesh
+              </h2>
+            </div>
 
-          <div class="gap-3">
-            <img src="./assets/coin.png" alt="coin" />
-            <p class="text-fontColorPera text-xl font-medium">
-              <span>5500</span> BDT
-            </p>
+            <div class="gap-3">
+              <img src="./assets/coin.png" alt="coin" />
+              <p class="text-fontColorPera text-xl font-medium">
+                <span>5500</span> BDT
+              </p>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <!-- ? Navbar End -->
     </header>
     <!-- ? Header Section End -->
@@ -173,5 +174,7 @@
       </div>
     </main>
     <!-- ? Main Section End -->
+
+    <script src="./js/blog.js"></script>
   </body>
 </html>
