@@ -172,7 +172,7 @@ feniDonationButton.addEventListener("click", function () {
 
       const h2 = document.createElement("h2");
 
-      h2.textContent = `${feniFundInput} tk is Donate for Flood at Noakhali, Bangladesh`;
+      h2.textContent = `${feniFundInput} tk is Donate for Flood Relief in Feni,Bangladesh`;
       h2.className = "text-fontColorHeading font-bold text-xl"; // Add a class name
       h2.id = "historyHeading";
       let parentElement = document.getElementById("historyBox");
@@ -219,7 +219,7 @@ quotaDonationButton.addEventListener("click", function () {
 
       const h2 = document.createElement("h2");
 
-      h2.textContent = `${quotaFundInput} tk is Donate for Flood at Noakhali, Bangladesh`;
+      h2.textContent = `${quotaFundInput} tk is Donate for Aid for Injured in the Quota Movement`;
       h2.className = "text-fontColorHeading font-bold text-xl"; // Add a class name
       h2.id = "historyHeading";
       let parentElement = document.getElementById("historyBox");
