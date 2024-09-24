@@ -62,7 +62,7 @@
   </head>
   <body class="font-lexend">
     <!-- ? Header Section Start -->
-    <header class="sticky top-0 z-50 backdrop-blur-lg bg-white/70 hidden">
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-white/70">
       <!-- ? Navbar Start -->
       <div class="py-6 bg-headerBg">
         <nav class="w-11/12 mx-auto">
@@ -86,7 +86,7 @@
             <div class="gap-3">
               <img src="./assets/coin.png" alt="coin" />
               <p class="text-fontColorPera text-xl font-medium">
-                <span>5500</span> BDT
+                <span id="defaultAmount">5500</span> BDT
               </p>
             </div>
           </div>
@@ -158,6 +158,8 @@
               </p>
             </div>
 
+            <!-- ? Modal -->
+
             <!-- Donation input fields -->
             <div class="space-y-6">
               <input
@@ -172,6 +174,27 @@
               >
                 Donate Now
               </button>
+              <!-- Open the modal using ID.showModal() method -->
+
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box flex flex-col items-center">
+                  <h2 class="text-lg font-bold">Congrates!</h2>
+                  <img
+                    class="h-8 w-8"
+                    src="./assets/coin.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <p class="py-4">You have Donated for humankind</p>
+                  <h3 class="text-lg font-bold">Successfully</h3>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
@@ -195,7 +218,7 @@
             >
               <img src="./assets/coin.png" alt="coin" />
               <p class="text-fontColorPera text-base font-normal">
-                <span>00</span> BDT
+                <span id="feniTotalFund">00</span> BDT
               </p>
             </div>
 
@@ -219,15 +242,39 @@
             <!-- Donation input fields -->
             <div class="space-y-6">
               <input
+                id="feniFundInput"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full text-fontColorPera2 text-sm"
               />
               <button
+                id="feniDonationButton"
                 class="btn btn-block bg-btnPrimaryColor hover:bg-btnHoverColor"
               >
                 Donate Now
               </button>
+
+              <!-- Open the modal using ID.showModal() method -->
+
+              <dialog id="my_modal_2" class="modal">
+                <div class="modal-box flex flex-col items-center">
+                  <h2 class="text-lg font-bold">Congrates!</h2>
+                  <img
+                    class="h-8 w-8"
+                    src="./assets/coin.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <p class="py-4">You have Donated for humankind</p>
+                  <h3 class="text-lg font-bold">Successfully</h3>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
@@ -255,7 +302,7 @@
             >
               <img src="./assets/coin.png" alt="coin" />
               <p class="text-fontColorPera text-base font-normal">
-                <span>00</span> BDT
+                <span id="quotaTotalFund">00</span> BDT
               </p>
             </div>
 
@@ -280,15 +327,39 @@
             <!-- Donation input fields -->
             <div class="space-y-6">
               <input
+                id="quotaFundInput"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full text-fontColorPera2 text-sm"
               />
               <button
+                id="quotaDonationButton"
                 class="btn btn-block bg-btnPrimaryColor hover:bg-btnHoverColor"
               >
                 Donate Now
               </button>
+
+              <!-- Open the modal using ID.showModal() method -->
+
+              <dialog id="my_modal_3" class="modal">
+                <div class="modal-box flex flex-col items-center">
+                  <h2 class="text-lg font-bold">Congrates!</h2>
+                  <img
+                    class="h-8 w-8"
+                    src="./assets/coin.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <p class="py-4">You have Donated for humankind</p>
+                  <h3 class="text-lg font-bold">Successfully</h3>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
@@ -301,11 +372,9 @@
         >
           <!-- Description & Donation Part -->
           <div
+            id="historyBox"
             class="flex flex-col gap-6 lg:justify-between lg:items-stretch lg:w-2/4"
-          >
-            <h1>6500 Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
-            <p></p>
-          </div>
+          ></div>
         </div>
       </section>
     </main>

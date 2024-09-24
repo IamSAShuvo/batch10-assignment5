@@ -12,3 +12,13 @@ function getInputFieldValue(id) {
 
   return inputValue;
 }
+
+function addition(num1, num2) {
+  let result = num1 + num2;
+  return result;
+}
+
+function subtraction(num1, num2) {
+  let result = num1 - num2;
+  return result;
+}
