@@ -167,6 +167,24 @@ feniDonationButton.addEventListener("click", function () {
       document
         .getElementById("noakhaliDonationButton")
         .setAttribute("onclick", "my_modal_2.showModal()");
+
+      let timeAndDate = new Date();
+
+      const h2 = document.createElement("h2");
+
+      h2.textContent = `${noakhaliFundInput} tk is Donate for Flood at Noakhali, Bangladesh`;
+      h2.className = "text-fontColorHeading font-bold text-xl"; // Add a class name
+      h2.id = "historyHeading";
+      let parentElement = document.getElementById("historyBox");
+      parentElement.appendChild(h2);
+
+      const p = document.createElement("p");
+
+      p.textContent = `Date: ${timeAndDate}`;
+      p.className = "text-fontColorPera font-light text-base"; // Add a class name
+      p.id = "historyTimeAndDate";
+      parentElement = document.getElementById("historyBox");
+      parentElement.appendChild(p);
     }
   }
   document.getElementById("feniFundInput").value = "";
@@ -196,6 +214,24 @@ quotaDonationButton.addEventListener("click", function () {
       document
         .getElementById("noakhaliDonationButton")
         .setAttribute("onclick", "my_modal_3.showModal()");
+
+      let timeAndDate = new Date();
+
+      const h2 = document.createElement("h2");
+
+      h2.textContent = `${noakhaliFundInput} tk is Donate for Flood at Noakhali, Bangladesh`;
+      h2.className = "text-fontColorHeading font-bold text-xl"; // Add a class name
+      h2.id = "historyHeading";
+      let parentElement = document.getElementById("historyBox");
+      parentElement.appendChild(h2);
+
+      const p = document.createElement("p");
+
+      p.textContent = `Date: ${timeAndDate}`;
+      p.className = "text-fontColorPera font-light text-base"; // Add a class name
+      p.id = "historyTimeAndDate";
+      parentElement = document.getElementById("historyBox");
+      parentElement.appendChild(p);
     }
   }
   document.getElementById("quotaFundInput").value = "";
